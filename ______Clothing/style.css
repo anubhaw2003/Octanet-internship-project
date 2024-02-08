@@ -1,0 +1,480 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Nunito:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 20px;
+  /* font-family: 'Dancing Script', cursive; */
+  font-family: "Nunito", sans-serif;
+  color: #23276c;
+  background-color: #fff9f4;
+}
+.Whole {
+  height: auto;
+  width: 100%;
+}
+.Whole .fPage {
+  min-height: 100vh;
+  width: 100%;
+}
+.Whole .fPage .upper {
+  height: 8vh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px 0;
+  box-shadow: 0 0 5px gray;
+}
+.Whole .fPage .upper .logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.Whole .fPage .upper .logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: drop-shadow(0 0 5px#23276c);
+  border-radius: 50%;
+}
+.Whole .fPage .upper .navbar {
+  height: 100%;
+  width: 1200px;
+  display: flex;
+  align-items: center;
+
+  /* border: 2px solid red; */
+}
+.Whole .fPage .upper .navbar ul {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Whole .fPage .upper .navbar ul li {
+  padding: 0 10px;
+  list-style: none;
+}
+.Whole .fPage .upper .navbar ul li a {
+  text-decoration: none;
+  padding: 0 10px;
+  font-size: 1rem;
+  color: gray;
+  font-weight: 600;
+}
+.Whole .fPage .upper .navbar ul li a:hover {
+  cursor: pointer;
+  color: #23276c;
+  transition: all 0.3s ease;
+}
+.Whole .fPage .upper .navbar .smallList {
+  height: 100%;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Whole .fPage .upper .navbar .smallList span {
+  padding: 0 4px;
+  color: gray;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.Whole .fPage .upper .navbar .smallList span:hover {
+  cursor: pointer;
+  color: #23276c;
+  transition: all 0.3s ease;
+}
+.Whole .fPage .upper .navbar .smallList .searchBox {
+  height: 35px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(128, 128, 128, 0.116);
+  box-shadow: 0 0 3px rgba(128, 128, 128, 0.116);
+  border-radius: 10px;
+}
+.Whole .fPage .upper .navbar .smallList .searchBox:hover {
+  outline: 2px solid #23276c;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.Whole .fPage .upper .navbar .smallList .searchBox input {
+  height: 100%;
+
+  outline: none;
+  border: none;
+  padding: 0 5px;
+  font-size: 1rem;
+  color: gray;
+}
+.Whole .fPage .midSection {
+  height: 92vh;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.Whole .fPage .midSection .leftImage {
+  height: 500px;
+  width: 500px;
+}
+.Whole .fPage .midSection .leftImage img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.Whole .fPage .midSection .rightText {
+  height: 500px;
+  width: 50%;
+  padding-left: 100px;
+}
+.Whole .fPage .midSection .rightText h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.Whole .fPage .midSection .rightText #first {
+  color: coral;
+}
+.Whole .fPage .midSection .rightText p {
+  color: gray;
+  padding: 10px 0;
+  font-size: 1rem;
+}
+.Whole .fPage .midSection .rightText button {
+  color: gray;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  color: honeydew;
+  background-color: blue;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: inset 0 0 20px gray;
+}
+.Whole .fPage .midSection .rightText button:hover {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: scale(0.98);
+}
+.Whole .fPage .midSection .rightText button span {
+  padding: 5px;
+}
+.Whole .secPage {
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgb(240, 238, 238);
+}
+
+.Whole .secPage h1 {
+  padding: 30px 60px;
+  font-size: 2.5rem;
+}
+.Whole .CardSection {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Whole .CardSection .card {
+  height: 650px;
+  width: 430px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(128, 128, 128, 0.589);
+  margin: 0px 30px;
+  margin-bottom: 60px;
+  background-color: white;
+  padding: 20px;
+  transform: scale(0.95);
+  transition: all 1s ease;
+}
+.Whole .CardSection .card:hover {
+  transform: scale(1);
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.Whole .CardSection .card .image {
+  height: 430px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(128, 128, 128, 0.589);
+  margin-bottom: 10px;
+  background-color: rgb(240, 238, 238);
+}
+.Whole .CardSection .card .image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: contain;
+}
+.Whole .CardSection .card .content {
+  height: auto;
+  width: 100%;
+}
+.Whole .CardSection .card .content h3 {
+  padding: 10px 0;
+}
+.Whole .CardSection .card .content p {
+  font-size: 1rem;
+  letter-spacing: 0.8px;
+}
+.Whole .CardSection .card .content .button {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.Whole .CardSection .card .content .button #price {
+  color: coral;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.Whole .CardSection .card .button button {
+  color: gray;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  color: honeydew;
+  background-color: blue;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: inset 0 0 20px gray;
+}
+.Whole .CardSection .card .button button:hover {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: scale(0.98);
+}
+.Whole .CardSection .card .button button span {
+  padding: 5px;
+}
+
+.Whole .thirdPage {
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgb(240, 238, 238);
+}
+
+.Whole .thirdPage h1 {
+  padding: 30px 60px;
+  font-size: 2.5rem;
+}
+
+.Whole .thirdPage .card {
+  height: 550px;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(128, 128, 128, 0.589);
+  margin: 0px 30px;
+  margin-bottom: 60px;
+  background-color: white;
+  padding: 20px;
+  /* transition: transform 0.5s ease; */
+  transform: scale(0.95);
+  transition: all 1s ease;
+}
+.Whole .thirdPage .card:hover {
+  transform: scale(1);
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.Whole .thirdPage .card .image {
+  height: 330px;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  box-shadow: none;
+}
+.Whole .thirdPage .card .image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: contain;
+}
+.Whole .thirdPage .card .content {
+  height: auto;
+  width: 100%;
+}
+.Whole .thirdPage .card .content h3 {
+  padding: 10px 0;
+}
+.Whole .thirdPage .card .content p {
+  font-size: 1rem;
+  letter-spacing: 0.8px;
+}
+.Whole .thirdPage .card .content .button {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.Whole .thirdPage .card .content .button #price {
+  color: coral;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.Whole .thirdPage .card .button button {
+  color: gray;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  color: honeydew;
+  background-color: blue;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: inset 0 0 20px gray;
+}
+.Whole .thirdPage .card .button button:hover {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: scale(0.98);
+}
+.Whole .thirdPage .card .button button span {
+  padding: 5px;
+}
+
+.Whole .footer {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(240, 238, 238);
+}
+.Whole .footer .contentSection {
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  /* border-bottom: 1px solid rgba(128, 128, 128, 0.589); */
+}
+.Whole .footer .contentSection .upper {
+  height: 85%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.589);
+  /* border: 2px solid red; */
+}
+.Whole .footer .contentSection .upper .cards {
+  height: 90%;
+  width: 45%;
+
+  /* border: 2px solid red; */
+}
+.Whole .footer .contentSection .upper .cards .card {
+  height: auto;
+  width: 90%;
+  box-shadow: 0 0 20px rgba(128, 128, 128, 0.589);
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+
+  /* border: 2px solid red; */
+}
+.Whole .footer .contentSection .upper .cards .card .img {
+  height: 120px;
+  width: 120px;
+}
+.Whole .footer .contentSection .upper .cards .card .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.Whole .footer .contentSection .upper .cards .card .text h3 {
+  font-size: 1.2rem;
+  padding: 0 20px;
+}
+.Whole .footer .contentSection .upper .cards .card .text p {
+  font-size: 1rem;
+  padding: 0 20px;
+}
+.Whole .footer .contentSection .upper .image {
+  height: 90%;
+  width: 55%;
+
+  /* border: 2px solid black; */
+}
+.Whole .footer .contentSection .upper .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+
+  /* border: 2px solid black; */
+}
+
+.Whole .footer .lower {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Whole .footer .lower p {
+  font-size: 0.8rem;
+  width: 50%;
+  padding: 10px 0;
+  font-weight: 400;
+}
+.Whole .footer .lower p span {
+  color: blue;
+  font-weight: 600;
+}
+.Whole .footer .lower .icons {
+  height: 100%;
+  width: auto;
+}
+.Whole .footer .lower .icons ul {
+  height: 100%;
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+.Whole .footer .lower .icons ul li {
+  padding: 0 10px;
+  list-style: none;
+}
+.Whole .footer .lower .icons ul li a {
+  font-size: 1.5rem;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: rgba(128, 128, 128, 0.674);
+  text-decoration: none;
+  color: #fff9f4;
+}
+.Whole .footer .lower .icons ul li a:hover {
+  background-color: #23276c;
+  color: #fff9f4;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
